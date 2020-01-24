@@ -1,0 +1,226 @@
+body {
+  font-family: "Montaga", serif;    /* Definizione del font (importato da Google Fonts) */
+}
+
+a {
+    color:white;
+}
+
+#testo {
+  color:black;
+}
+
+a:hover {
+  color:white;
+}
+
+.container-fluid-xl {
+  background-color: rgb(0, 51, 0);
+}
+
+.card-body1 h5:hover, .card-body1 a:hover {
+  color: rgb(0, 51, 0);
+}
+
+.button {               /* Definizione dei parametri del button del carousel, in aprticolare il cambiamento di colore che funge da feedback visivo */
+    background-color: transparent;
+    border: 2px solid black;
+    color: black;
+    padding: 4px 32px;
+    font-size: 16px;
+    margin: 2px 2px;
+    transition-duration: 0.5s;
+    text-shadow: 2px 2px white;
+}
+
+.button:hover {
+    background-color: rgb(0, 51, 0);
+    color: white;
+    text-shadow:none;
+}
+
+
+.form-inline {    /*CSS necessario, insieme ai successivo, per il cambiamento di stato della navbar, dei dropdown menu e della barra di ricerca*/
+opacity: 0;
+}
+
+.visible {
+opacity: 1;
+}
+
+#barra {
+  opacity: 1;
+}
+
+
+.nav-item1 {
+  margin-right:50%;
+}
+
+.navbarText {
+  padding-left: 11%;
+}
+
+.navbar-collapse {
+  padding-left: 23%;
+  margin-right: 18%;
+}
+
+
+.navbarText2 {                 /* classe applicata, insieme alla successiva, nel JavaScript */
+  padding-left: 0% !important;
+  background-color: rgb(0, 51, 0);
+}
+
+.dropdownMenu2 {
+  background-color: rgb(0, 51, 0) !important;
+}
+
+.dropdownMenu2 a:hover {
+  color: rgb(0, 51, 0) !important;
+}
+
+.carousel h1, .carousel h3 {       /*Text-shadow inserito in modo tale da facilitare la lettura dei titoli anche nei casi di immagini con poco contrasto */
+color:black;
+text-shadow: 2px 2px white;
+}
+
+.card a, h5, p {
+  color:black;
+}
+
+h5 {
+  color:black;
+  text-align: justify;
+}
+
+.item img {        /*Classi necessarie per il funzionamento della mappa */
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 100px;
+}
+
+.mappa h2 {
+   color:green;
+}
+
+.mappa p {
+  padding-left:100px !important;
+  color:green;
+}
+
+#footer {
+  color:white;
+}
+
+.fa {     /* Icone social */
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+ol a {
+  color:black;
+}
+
+li a: hover {
+  color:rgb(0, 51, 0) !important;
+}
+
+/*Classi per rendere responsive la pagina */
+
+@media (max-width: 1680px) {
+  .nav-item1 {
+    margin-right:50%;
+  }
+  .navbarText2 {                 /* classe applicata, insieme alla successiva, nel JavaScript */
+    padding-left: 5% !important;
+    background-color: rgb(0, 51, 0);
+  }
+  .navbar-collapse {
+    padding-left: 15%;
+    margin-right: 18%;
+  }
+
+  h2 {
+      font-size: 150%;
+   }
+
+   h5 {
+     font-size: 100%;
+   }
+
+   footer p {
+     font-size: 80%;
+   }
+
+}
+
+@media (max-width: 1366px) {
+  .nav-item1 {
+    margin-right:50%;
+  }
+  .navbarText2 {                 /* classe applicata, insieme alla successiva, nel JavaScript */
+    padding-left: 0% !important;
+    background-color: rgb(0, 51, 0);
+  }
+  .navbar-collapse {
+    padding-left: 12%;
+    margin-right: 18%;
+  }
+  .visible {
+  opacity: 1;
+  }
+
+  h1 {
+    font-size: 200%;
+  }
+
+  h2 {
+      font-size: 150%;
+   }
+
+   h5 {
+     font-size: 95%;
+   }
+
+   footer p {
+     font-size: 70%;
+   }
+}
+
+@media (max-width: 600px) {
+  body {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+
+  .text-white {
+    padding-left: 3%;
+  }
+
+  #logo {
+    float:none !important;
+  }
+
+  #unibo {
+    float:none !important;
+  }
+
+  #barra {
+    padding-left: 3%;
+  }
+
+  .top {
+    text-align:center;
+  }
+  
+  .bottom {
+
+    text-align:center !important;
+  }
+}

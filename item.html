@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>200 Fiabe Italiane</title>
+    <link rel="icon" href="immagini/green_2.ico"/>
+    <meta charset="utf-8">
+    <meta charset="utf-8" lang="it"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes"/>
+    <meta name="DC:title" content="200 Fiabe Italiane"/>
+    <meta name="DC.Creator.PersonalName" content="Sorrentino, Stefano"/>
+    <meta name="DC.Creator.PersonalName.Address" content="stefano.sorrentino4@studio.unibo.it"/>
+    <meta name="DC.Subject" content="Fiabe, Racconti, Fiabe italiane, Italo Calvino, Letteratura, Illustrazioni, Literature, Fairy Tales, Tales, Italian Tales"/>
+    <meta name="DC.Description" content="Edizione digitale e interattiva della raccolta di 'Fiabe Italiane, raccolte dalla tradizione popolare negli ultimi 100 anni e trascritte in lingua dai vari dialetti da Italo Calvino'"/>
+    <meta name="DC.Publisher" content="Altervista.org"/>
+    <meta name="DC.Contributor" content="ALMA MATER STUDIORUM - Università di Bologna"/>
+    <meta name="DC.Date" content="2020"/>
+    <meta name="DC.Type" content="Edizione digitale, biblioteca digitale, galleria di immagini, raccolta interattiva"/>
+    <meta name="DC.Source" content="Fiabe Italiane, Milano - Giulio Einaudi Editore, 1956"/>
+    <meta name="DC.Format" content="html/xml"/>
+    <meta name="DC.Identifier" content="www.duecentofiabeitaliane.altervista.org"/>
+    <meta name="DC.Language" content="it"/>
+    <meta name="DC.Rights" content="http://creativecommons.org/licenses/by-nc/4.0/"/>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!--MDBootsrap locale -->
+    <link href="mdb/css/addons/datatables.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montaga&display=swap" rel="stylesheet">
+    <!-- Icone di Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="stile.css">
+    <link rel="stylesheet" type="text/css" href="stile-raccolta.css">
+    <link rel="stylesheet" type="text/css" href="stile-item.css">
+    <!-- Import JavaScript bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!--JavaScript di MDBootsrap locale -->
+    <script type="text/javascript" src="mdb/js/addons/datatables.min.js"></script>
+    <!-- JavaScript mappa (carico le immagini in anticipo) -->
+    <script language="JavaScript" type="text/JavaScript">
+      function fd_preloadImages() {
+        var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+         var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+         if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+      }
+    </script>
+
+  </head>
+  <!-- Nel tag <body> eseguo la funzione "preload" dello script -->
+  <body onLoad="fd_preloadImages('images/Aosta.png','images/Piemonte.png','images/Lombardia.png','images/Trentino.png','images/Veneto.png','images/Friuli.png','images/Liguria.png','images/Emilia.png','images/Toscana.png','images/Marche.png','images/Umbria.png','images/Molise.png','images/Lazio.png','images/Abruzzo.png','images/Campania.png','images/Puglia.png','images/Calabria.png','images/Sicilia.png','images/Sardegna.png')">
+        <!-- Realizazione header, con logo, barra di ricerca ed elementi di metanavigazione -->
+    <header id="home" class="container-fluid-xl text-white p-3">
+      <div class="row">
+        <div class="col-sm-4 pr-5 top">
+          <a href="index.html"><img id="logo" src="immagini/green_1.png" alt="logo" class="float-right"/></a>
+        </div>
+        <div class="col-sm-4 top">
+          <h1 class="pt-4 float-left">200 FIABE ITALIANE</h1>
+          <h2 class="pt-1 float-left"><em>Raccolte e tradotte da Italo Calvino</em></h2>
+        </div>
+        <div class="col-sm-4 top">
+          <div class="row pt-4 pb-0">
+            <p class="text-white"> <a href="">Contatti</a> | <a href="">FAQ</a> | <a href="">English version</a> </p>
+          </div>
+          <div class="row">
+            <form class="form-inline float-left" id="barra">
+              <input class="form-control mr-sm-2" type="search" placeholder="Cerca" aria-label="Cerca">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Cerca</button>
+            </form>
+          </div>
+          <div class="row"></div>
+        </div>
+      </div>
+    </header>
+    <!-- Realizzazione navbar e relativi elementi di navigazione principale e secondaria -->
+    <strong><nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light navbarText">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item nav-item1 active">
+            <a class="nav-link text-success" href="index.html">Home</a>
+          </li>
+          <li class="nav-item nav-item1 dropdown">
+            <a class="nav-link dropdown-toggle text-success" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Raccolta</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+              <a class="dropdown-item text-success" href="raccolta.html#indice">Indice</a>
+              <a class="dropdown-item text-success" href="raccolta.html#regioni">Regioni</a>
+              <a class="dropdown-item text-success" href="raccolta.html#galleria">Galleria</a>
+              <a class="dropdown-item text-success" href="raccolta.html#bibliografia">Bibliografia</a>
+            </div>
+          </li>
+          <li class="nav-item nav-item1 dropdown">
+            <a class="nav-link dropdown-toggle text-success" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Guida</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+              <a class="dropdown-item text-success" href="#">Introduzione</a>
+              <a class="dropdown-item text-success" href="#">Criteri del lavoro</a>
+              <a class="dropdown-item text-success" href="#">Raccolte folkloristiche</a>
+              <a class="dropdown-item text-success" href="#">La fiaba italiana</a>
+            </div>
+          </li>
+          <li class="nav-item nav-item1">
+            <a class="nav-link text-success" href="#">L'autore</a>
+          </li>
+        </ul>
+        <form class="form-inline">
+          <input class="form-control mr-sm-2" type="search" placeholder="Cerca" aria-label="Cerca">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Cerca</button>
+        </form>
+      </div>
+    </nav></strong>
+    <!-- Breadcrumbs -->
+    <div class="row">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-8">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item"><a href="raccolta.html">Raccolta</a></li>
+          <li class="breadcrumb-item active" aria-current="page">34 - Il dimezzato</li>
+        </ol>
+      </div>
+      <div class="col-sm-2"></div>
+    </div>
+    <article>
+      <section class="row">
+        <div class="col-sm-2"></div>
+        <!-- Realizzazione di un componente aside contenente un indice interattivo della raccolta, inserito in un iframe così da permettere il posizionamento automatico sull'id della fiaba interessata, contenuto nell'url -->
+        <aside class="col-sm-2">
+          <iframe class="sticky-top sticky-offset" id="lato" src="iframe.html"></iframe>
+        </aside>
+        <!-- Body dell'opera, realizzato tramite un accordion (cards collapse) -->
+        <div class="col-sm-6" id="accordion">
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h5 class="mb-0">
+                <button class="btn btn-link btn1" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  <h4><strong>Testo</strong></h4>
+                </button>
+              </h5>
+            </div>
+            <!-- Testo della fiaba -->
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+              <div class="card-body">
+                <br/>
+                <h1><strong>34 - Il dimezzato</strong></h1>
+                <h3><a href="#">Veneto</a> (Venezia)</h1>
+                  <br/>
+                  <div class="testo-fiaba">
+                    <img src="immagini/capolettera2.png" class="capolettera" alt="U"/><br/><br/>
+                    <h5>  na donna aspettava un bambino, e aveva voglia di prezzemolo. Vicino a lei stava una strega, una strega famosa, e aveva un orto tutto di prezzemolo. La porta dell'orto era sempre aperta perchè di prezzemolo ce n'era tanto, che chi voleva popteva anche prenderselo. La donna che aveva voglia di prezzemolo entrò, si mise a mangiare prezzemolo foglia a foglia, e mangia che ti mangia, finì per far piazza pulita di mezzo orto. Quando la strega tornò e vide l'orto per metà pelato che non c'era più neanche un filo verde, disse: - Ieh!... Tutto me lo vogliono mangiare... Domani starò di guardia a vedere chi viene.</h5>
+                    <h5>Torna la donna l'indomani, e si mette a mangiare il resto del prezzemolo. Aveva appena finito di brucare l'ultima piantina, che saltò fuori la strega e disse: - Ieh...! Sei tu che m'hai mangiato tutto il prezzemolo?</h5>
+                    <h5>La donna si spaventò: - Per carità, mi lasci andare, aspetto un bambino...</h5>
+                    <h5>- Si che ti lascio andare, - disse la strega, - basta che il bambino o la bambina che ti nascerà, quando avrà sette anni, sia mezzo epr te e mezzo per me.</h5>
+                    <h5>E la donna, spaventata, gli disse di sì, pur di poter scappare via.</h5>
+                    <h5>Le nacque un figlio maschio. Cresce, compie i sei anni, e un giorno, passando dalla strada della strega, questa lo vede e gli dice: - Dì, ricorda a tua madre che ci manca un anno.</h5>
+                    <h5>Il bambino andò a casa e disse: - Mamma, m'ha detto una vecchia che ci manca un anno.</h5>
+                    <h5>- E tu, - gli disse, - se te lo torno a dire, dille così che è matta.</h5>
+                    <h5>Al bambino amncavano tre mesi a compiere i sette anni e la strega gli disse: - Dille a tua madre che ci manca tre mesi.</h5>
+                    <h5>E lui: - Cara lei, lei è matta!</h5>
+                    <h5>E la vecchia: - Sì, vedremo se son matta!</h5>
+                    <h5>Dopo tre mesi la vecchia prende il bambino per strada e se lo porta a casa. Lo stende su una tavola, e con un coltello lo tagli in due metà per il lungo, mezza testa e mezzo corpo.</h5>
+                    <h5>A una di questi mezzi disse: - Tu và a casa, - e all'altro mezzo disse: - Tu resta con me.</h5>
+                    <h5>Un mezzo resta e l'altro mezzo va a casa. Va a casa e dice a sua madre: - Hai visto mamma, cosa m'ha fatto, quella vecchia? E tu dicevi che era matta! - E la mamma dovette aprir le braccia e star zitta.</h5>
+                    <h5>Questo mezzo ragazzo viene grande e non sapeva che mestiere fare: decide di fare il pescatore. Un giorno va a pescare all'anguillaia e prende un'anguilla lunga quanto lui. La tira su e l'anguilla gli dice: - Lasciami andare che tornerai a pescarmi -. Lui la ributta in acqua, butta ancora la rete e la tira su piena d'anguille. Tornò con la barca che traboccava d'anguille da tutte le parti e guadagnò un sacco di quattrini.</h5>
+                    <h5>Il giorno dopo, ripescò ancora quell'anguilla grande, che gli dice: - Lasciami andare, che per amor dell'anguillina, qualcunque cosa vorrai, sarà fatto, - e lui subito la lasciò.</h5>
+                    <h5>Un giorno, andando come al solito a pescare, passò davanti al palazzo del Re. C'era la figlia del Re al balcone con le damigelle.</h5>
+                    <h5>La figlia del Re vede quest'uomo con mezza testa, metà corpo, una gamba sola e scoppia a ridere.</h5>
+                    <h5>Lui alza l'occhio verso di lei e le dice: - Ha! Tu ridi?... E allora, per l'amor dell'anguillina, la figlia del Re abbia un figlio da me. </h5>
+                    <h5>Dopo un po' la figlia del Re si mise ad aspettare un bambino e i genitori se ne accorsero. - Ma com'è questa storia? - le chiesero.</h5>
+                    <h5>- Mah, io non ne so niente, - dice la ragazza.</h5>
+                    <h5>- Come? Non ne sai niente? Chi è il padre?</h5>
+                    <h5>- Davvero, non lo so, non so niente, - e nonostante tutte le richieste dei genitori, che le dicevano che parlasse pure, chè la perdonavano, lei continuava a dire di non sapere nulla. Allora cominciarono a maltrattarla, ad avvilirla, e lei nons apeva darsi pace.</h5>
+                    <h5>Nacque il bambino, un bellissimo figlio maschio, ma i genitori piangevano per il disonore di avere in casa un bambino senza padre e chimarono un Mago perchè l'indovinasse lui. Il Mago disse: - Aspettiamo che il bambino abbia un anno.</h5>
+                    <h5>Quando ebbe un anno, - Bisogna, - disse il Mago, - far corte bandita di tutti is ignori della città, e quando is ignori saranno ins ala, bisogna che sia portato intorno questo bambino con una mela d'oro e una mela d'argento. La mela d'oro la darà a suo padre e la mela d'argento la darà a suo nonno.</h5>
+                    <h5>Il Re mandò fuori manifesti e fece preparare una gran sala. cont anti seggioloni in torno. Quando tutti i signori della città furon seduti sui seggioloni, fece chiamare la balia con il bambino in braccio e le diede le due mele in mano. - Questa è per tuo padre, e questa per tuo nonno.</h5>
+                    <h5>La balia gira intorno alla sala, ritorna davanti al Re e il bambino gli dà la mela d'argento.</h5>
+                    <h5>- Che sono tuo nonno lo so, purtroppo, - dice il Re, - ma vogliamo sapere chi è tuo padre.</h5>
+                    <h5>Ma il bambino girava, girava, e la mela d'oro non la dava a nessuno.</h5>
+                    <h5>Fu richiamato il Mago. - Adesso, - disse il Mago, - faccia corte banbdita di tutti i poveri della città, - e il Re mandò fuori il manifesto.</h5>
+                    <h5>Quando il Mezzo sentì che a palazzo c'era corte bandita di tutti i poveri, disse a sua madre: - Preparami la mia mezza camicia, la mia mezza giacchetta, il mio pantalone, la mia scarpetta e la mia mezza berretta chè sono invitato dal Re.</h5>
+                    <h5>Tutto il salone era pieno di poveracci, pescatori, mendicanti.</h5>
+                    <h5>Intorno il Re aveva fatto emttere delle panche. La balia col bambino cominciò a girare intorno e il bambino aveva la mela d'oro in mano. - Su bello, - gli diceva la balia, - dàlla a tuo papà, - e girava intorno. Appena il bambino vide il Mezzo, si mise a sorridere, gli buttò le braccia al collo, e disse: - Papà, piglia questa mela!</h5>
+                    <h5>E dalle panche intorno tutti i poveri scoppiarono in una risata: - Iiieeeh! Di chi s'è innamorata la figlia del Re!</h5>
+                    <h5>In mezzo a tutti, solo il Re conservò la calma. - Dunque, questo sia lo sposo di mia figlia!</h5>
+                    <h5>E le nozze furono tosto celebrate. Gli sposi uscirono di chiesa e credevano che ad aspettarli ci fosse una carrozza. C'era una botte invece, una gran botte vuota: il Mezzo, la sua sposa e il bambino ci furono fatti entrare e chiusi dentro, e poi la botte fu gettata in mare.</h5>
+                    <h5>Il mare era in burrasca, e la botte scompariva e riappariva tra le onde, finchè non si vide più, e tutti nel palazzo del Re dissero che era andata a fondo.</h5>
+                    <h5>Galleggiava, invece. E là dentro il Mezzo, sentendo che la figlia del Re moriva di paura, le disse: - Sposa, vuoi che faccia approdare la botte su una spiaggia?</h5>
+                    <h5>E la sposa con un fil di voce: - Se sei capace, sì.</h5>
+                    <h5>Detto fatto, per l'amor dell'anguillina, la botte si trovò in secco su una spiaggia. Il mezzo ruppe il fondo e tutti e tre vennero fuori. Era ora di desinare, e per l'amor dell'anguillina apparve una tavola apparecchiata per tre, piena di pietanze e di bevande. Dopo che ebbero ben mangiato e ben bevuto, il Mezzo disse: - Sei contenta di me, sposa?</h5>
+                    <h5>- Sarei contenta ancor di più, - disse lei, - se invece di mezzo, tu fossi intero.</h5>
+                    <h5>Allora lui disse tra sè: "Per l'amor dell'anguillina, ch'io venga intero e più bello di prima", e su quel momento diventò un bellissimo giovane, tutto intero, e vestito da gran signore. - Sei contenta?</h5>
+                    <h5>- Si, contenta son contenta, ma lo sarei ancor di più se invece che su una spiaggia deserta, fossimo in un bel palazzo.</h5>
+                    <h5>E lui, tra se: "Per l'amor dell'anguillina, che noi possiamo trovarci in un bel palazzo con due alberi di melo, uno per parte, uno che faccia le mele d'oro e uno le mele d'argento, e ci siano camerieri, maggiordomi, damigelle e tutto quello di cui c'è bisogno in un palazzo".</h5>
+                    <h5>Aveva appena pensato quello che ci fu tutto, palazzo, mele, maggiordomi.</h5>
+                    <h5>Dopo pochi giorni, il Mezzo, che non era più mezzo ma intero, fece corte bandita di tutti i Re e le Regine dei dintorni, e venne anche il apdre della sposa. Il Mezzo, ricevendoli sulla porta, disse loro: - Vi raccomando una sola cosa, di non toccare quelle mele d'oro e quelle mele d'argento: guai a chi gli capitasse di toccarle.</h5>
+                    <h5>- Stia tranquillo, stia tranquillo, - dissero gli invitati. - terremo le mani a posto.</h5>
+                    <h5>Si mettono a mangiare e a bere, e intanto il Mezzo dice tra sè: "Per l'amor dell'anguillina, che una mela d'oro e una mela d'argento vadano nelle tasche di mio suocero".</h5>
+                    <h5>Dopo pranzo, conduce gli ospiti a passeggio in giardino e vede che mancano due mele. - Chi è stato? - chiede.</h5>
+                    <h5>Tutti quei Re dicono: - Io no. Io non ho toccato niente.</h5>
+                    <h5>Il mezzo dice: - V'avevo avvertito prima che quelle mele non volevo che fossero toccate. Ora mi tocca passare la visita alle loro Maestà.</h5>
+                    <h5>E cominciò a frugare, Re per Re, Regina per Regina. Nessuno aveva mele addosso. Alla fine toccò al suocero, e gli trovò le due mele. Una per tasca. - Hai visto! Tra tutti, nessuno ha avuto il coraggio di toccare niente e solo lei me ne ha rubate due! Adesso avrà da fare con me!</h5>
+                    <h5>- Ma io non so niente... - s'affannava a dire il Re. - Io non so come sia... Io non le ho prese, posso giurarlo.</h5>
+                    <h5>E il Mezzo: - Così, con tutte le prove contro, vorrebbe dire d'essere innocente?</h5>
+                    <h5>E il Re: - Sì.</h5>
+                    <h5>- Allora, com'è innocente lei, era innocente sua figlia, ed è giusto che quel che ha fatto di sua figlia faccia io a lei.</h5>
+                    <h5>In quel momento si presentò la sposa. - Non sia mai detto, - fece, - che per causa mia mio padre abbia a soffrire; se pure lui m'ha usato crudeltà, è tuttavia sempre mio padre e dopmando grazia per lui.</h5>
+                    <h5>E il Mezzo, mosso a compassione, gli fece grazia. Il Re, contento d'aver ritrovato sua figlia che credeva morta, e d'aver saputo ch'era innocente, li condusse tutti con sè al suo palazzo e là vissero sempre assieme in buona pace e carità, e se non son morti saranno ancora lì.</h5>
+                    <br/><a href="immagini/dimezzato.jpg" target="_blank"><img src="immagini/dimezzato2.png" alt="dimezzato" class="img2"/></a><br/><br/>
+                    <a href="#" class="btn btn-primary float-left bg-success" style="color:white"><- Fiaba precedente</a>
+                    <a href="#" class="btn btn-primary float-right bg-success" style="color:white">Fiaba successiva -></a>
+                    <br/>
+                    <br/>
+                    <h4 style="text-align:center">Ti è piaciuta questa fiaba? </h4>
+                  </div>
+                  <div style="text-align:center">
+                  <div class="rate" style="display:inline-block">
+                    <input type="radio" id="star5" name="rate" value="5" />
+                    <label for="star5" title="text">5 stars</label>
+                    <input type="radio" id="star4" name="rate" value="4" />
+                    <label for="star4" title="text">4 stars</label>
+                    <input type="radio" id="star3" name="rate" value="3" />
+                    <label for="star3" title="text">3 stars</label>
+                    <input type="radio" id="star2" name="rate" value="2" />
+                    <label for="star2" title="text">2 stars</label>
+                    <input type="radio" id="star1" name="rate" value="1" />
+                    <label for="star1" title="text">1 star</label>
+                  </div>
+                  </div>
+                  <br/>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed btn1" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  <h4><strong>Note</strong></h4>
+                </button>
+              </h5>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+              <div class="card-body">
+                <div class="note">
+                  <h4>34 - <em>Il dimezzato</em></h4>
+                  <h4>da <a href="#" class="badge badge-success">BERN. III</a> - 9, <em>El Mezo</em>, Venezia</h4><br/>
+                  <h5>La storia di Pietro Pazzo che potendo realizzare ogni desiderio per la virtù trasmessagli da un pesce, rende madre la principessa che rideva di lui, fu narrata con grande allegria dallo <a href="#" class="badge badge-success">STRAPAROLA III</a> - 1, e gli studiosi non sono alieni dal credere che possa essere una storia non importata, ma d'origine italiana. Consimile è la storia di Peruonto in <a href="#" class="badge badge-success">BASILE</a> - 3, che però riceve i poteri magici per aver fatto ombra a tre figli di fata addormentati. Questa versione veneziana ha la caratteristica d'avere un eroe dimezzato al posto del solito eroe sciocco.</h5>
+                  <h5>Le versioni popolari s'avvicinano tanto alla variante di <a href="#" class="badge badge-success">STRAPAROLA III</a> che a quella di <a href="#" class="badge badge-success">BASILE</a> o mescolano elementi d'entrambe. Ne ho visto di raccolte in <a href="#"><strong>Lombardia</a></strong> (<a href="#" class="badge badge-success">VISEN.</a> - 47), <a href="#"><strong>Liguria</a></strong> (<a href="#" class="badge badge-success">ANDR.</a> - 56), <a href="#"><strong>Toscana</a></strong> (<a href="#" class="badge badge-success">NER.</a> - 38, <a href="#" class="badge badge-success">PITRE' T.</a> - 30, <a href="#" class="badge badge-success">BALD.</a> - 61), <a href="#"><strong>Sicilia</strong></a> (<a href="#" class="badge badge-success">PITRE'.</a> - 178). Per il motivo iniziale (furto del prezzemolo e figlio promesso) cfr. la nostra <strong><em><a href="#">86 - Prezzemolina</a></em></strong>. Il motivo del pesce che esaudisce ogni desiderio è - preso isolamente - di diffusione europea (si ricordi la fiaba in versi di <a href="#" class="badge badge-success">PUSKIN</a>) e compare anche in qualche versione popolare italiana (<a href="#"><strong>Toscana</strong></a>, <a href="#" class="badge badge-success">NER.</a> - 38; <a href="#"><strong>Sicilia</strong></a>, <a href="#" class="badge badge-success">PITRE'.</a> - 102). Per altri motivi di oggetti magici che fanno realizzare i desideri, cfr. nota alla nostra <em><strong><a href="#">42 - L'anello magico</a></strong></em>. Quanto agli esseri dimezzati dotati di poteri soprannaturali se ne incontrano in tutto il folklore mondiale; in <a href="#"><strong>Sicilia</strong></a>, in una fiaba infantile (<a href="#" class="badge badge-success">PITRE'</a> - 129) c'è <em>Lu menzu-gadduzzu</em>; a Benevento, in una fiaba del "mondo di sotto" s'incontra <em>'nu miezzo cristiano'</em> (<a href="#" class="badge badge-success">CORAZ.</a> - 19).</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed btn1" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  <h4><strong>Scheda</strong></h4>
+                </button>
+              </h5>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+              <div class="card-body">
+                <ul class="list-group">
+                  <li class="list-group-item"><h4 style="float:left"><strong>Versione italiana</strong></h4><br/>
+                    <div class="card-body">
+                      <ul class="list-group">
+                        <li class="list-group-item"><h5 style="float:left"><strong>Titolo:</strong></h5><h5 style="float:right"><em>Il dimezzato</em></h5></li>
+                        <li class="list-group-item"><h5 style="float:left"><strong>ID #:</strong></h5><h5 style="float:right">34</h5></li>
+                        <li class="list-group-item"><h5 style="float:left"><strong>Curatore:</strong></h5><h5 style="float:right"><a href="#" id="link2">Italo Calvino</a></h5></li>
+                        <li class="list-group-item"><h5 style="float:left"><strong>Illustrazione:</strong></h5><a href="#"><img class="img2" src="immagini/dimezzato.jpg" alt="dimezzato" style="width:10%; float:right"/></a></li>
+                        <li class="list-group-item"><h5 style="float:left"><strong>Pubblicazione:</strong></h5><h5 style="float:right"><em>Fiabe Italiane</em>, Milano - Giulio Einaudi Editore, 1956</h5></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="list-group-item"><h4 style="float:left"><strong>Versione originale</strong></h4><br/>
+                    <div class="card-body">
+                      <ul class="list-group">
+                        <li class="list-group-item"><h5 style="float:left"><strong>Titolo:</strong></h5><h5 style="float:right"><em>El Mezo</em></h5></li>
+                        <li class="list-group-item"><h5 style="float:left"><strong>Curatore:</strong></h5><h5 style="float:right">Domenico Giuseppe Bernoni</h5></li>
+                        <li class="list-group-item"><h5 style="float:left"><strong>Regione:</strong></h5><h5 style="float:right"><a id="link2" href="#">Veneto</a> (Venezia)</h5></li>
+                        <li class="list-group-item"><h5 style="float:left"><strong>Segnatura:</strong></h5><h5 style="float:right"><a href="#" class="badge badge-success">BERN III.</a> - 9, <em>Fiabe popolari veneziane</em>, Venezia - 1893</h5></li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingFour">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed btn1" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  <h4><strong>Link & Download</strong></h4>
+                </button>
+              </h5>
+            </div>
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+              <div class="card-body">
+                <li class="list-group-item"><h4 style="float:left"><strong>Link</strong></h4><br/>
+                  <div class="card-body">
+                    <ul class="list-group">
+                      <li class="list-group-item"><h5 style="float:left"><strong>File XML:</strong></h5><a href="specimen.xml" target="_blank"><img src="immagini/xml.png" alt="xml" style="float:right"></img></a></li>
+                      <li class="list-group-item"><h5 style="float:left"><strong><a href="" id="link2">Guida alla lettura</a></strong></h5></li>
+                      <li class="list-group-item"><h5 style="float:left"><strong><a href="" id="link2">L'autore</a></strong></h5></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="list-group-item"><h4 style="float:left"><strong>Download</strong></h4><br/>
+                  <div class="card-body">
+                    <ul class="list-group">
+                      <li class="list-group-item"><h5 style="float:left"><strong>Download PDF:</strong></h5><a href="#"><img src="immagini/pdf.png" alt="pdf" style="float:right"></img></a></li>
+                    </ul>
+                  </div>
+                </li>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-2"></div>
+      </section>
+    </article>
+    <br/><br/>
+    <!-- Realizzazione footer -->
+    <footer class="container-fluid py-4 bg-dark">
+           <div class="row">
+               <div class="col-sm-4 bottom">
+                   <a href="https://www.unibo.it/it" target="_blank"><img class="float-right pr-5"  alt="unibo" id="unibo" src="immagini/alma2.png"/></a>
+               </div>
+               <div class="col-sm-4 mt-3 bottom">
+                   <p class="m-0  text-white">Realizzato da Stefano Sorrentino (<a href="">Project management plan</a>)</p>
+                   <p class="m-0  text-white">In collaborazione con ALMA MATER STUDIORUM - Universit&agrave di Bologna</p>
+                   <p  class="m-0  text-white">
+                   <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">&copy Creative Commons, 2020</a>
+                   <br/><br/>
+                   <p class="text-white"><a href='#'><img src="immagini/github2.png" alt="github"/></a> <a href="#">Lavora con noi</a> | <a href='#'>Fai una donazione</a> | <a href='#'>Trasparenza</a> | <a href='#'>Cookies</a> | <a href='#'>Copyright</a>
+               </div>
+              <div class="col-sm-4 mt-3 float-left bottom">
+                    <h4 id="footer">Rimani aggiornato!</h4>
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+              </div>
+           </div>
+   </footer>
+    <script>
+
+        //Funzione per posizionare l'iframe sull'id della fiaba selezionata
+      $(document).ready(function(){
+        function getParam(name) {
+          name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+          var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+              results = regex.exec(location.search);
+          return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+        }
+
+
+        var value=getParam('id');
+
+        document.getElementById('lato').src = "iframe.html#" + value;
+      });
+
+      $(window).scroll(function() {
+
+            // script per la sticky navbar e relativo cambio di aspetto
+            var scroll = $(window).scrollTop();
+
+            if (scroll >= 200) {
+                $(".form-inline").addClass("visible");
+                $(".navbar").removeClass("bg-light");
+                $(".navbar").addClass("navbarText2");
+                $(".nav-link").removeClass("text-success");
+                $(".nav-link").addClass("text-white");
+                $(".dropdown-menu").addClass("dropdownMenu2");
+                $(".dropdown-item").removeClass("text-success");
+                $(".dropdown-item").addClass("text-light");
+            } else {
+                $(".form-inline").removeClass("visible");
+                $(".navbar").removeClass("navbarText2");
+                $(".navbar").addClass("bg-light");
+                $(".nav-link").removeClass("text-white");
+                $(".nav-link").addClass("text-success");
+                $(".dropdown-menu").removeClass("dropdownMenu2");
+                $(".dropdown-item").removeClass("text-light");
+                $(".dropdown-item").addClass("text-success");
+            }
+        });
+    </script>
+  </body>
+</html>

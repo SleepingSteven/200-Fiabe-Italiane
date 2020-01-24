@@ -1,0 +1,123 @@
+/* Classi per l'aspetto dell'aside (indice) */
+#lato {
+   height: 620px;
+   overflow-y: scroll;
+   width: 100%;
+ }
+
+.sticky-offset {
+   top: 75px;
+}
+
+iframe {
+   border: 1px solid #dee2e6;
+   background-color: rgb(247,247, 247);
+}
+
+
+/*Aspetto dell'accordion */
+.btn1 {
+  color:green;
+}
+
+.btn1:hover {
+  color:green;
+}
+
+/* Classi per l'aspetto del testo della fiaba */
+.capolettera {
+ float:left;
+ float:top;
+}
+
+.card h3, h1 {
+   text-align: center;
+}
+
+.testo-fiaba {
+ margin-left:20px;
+ margin-right:20px;
+}
+
+#titolo {
+  text-align:left;
+}
+
+/*Classi per l'aspetto delle note */
+
+.note {
+  margin-left:20px;
+  margin-right:20px;
+}
+
+/* Classi per il sistema di valutazioni */
+
+.rate {
+    text-align: center;
+    height: 46px;
+    padding: 0 20px;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+
+#link2 {
+  color: green;
+  font-weight: bold;
+}
+
+.img2 {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width:100%;
+}
+
+.img2:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+/*Classi per rendere responsive la pagina */
+
+@media (max-width: 1680px) {
+  #lato {
+     height: 400px;
+     overflow-y: scroll;
+     width: 100%;
+   }
+}
+
+@media (max-width: 1366px) {
+  #lato {
+     height: 250px;
+     overflow-y: scroll;
+     width: 100%;
+   }
+}
