@@ -1,5 +1,6 @@
 body {
   font-family: "Montaga", serif;    /* Definizione del font (importato da Google Fonts) */
+  -webkit-font-smoothing: antialiased;
 }
 
 a {
@@ -8,6 +9,10 @@ a {
 
 #testo {
   color:black;
+}
+
+#titolo_pagina {
+  text-decoration: none;
 }
 
 a:hover {
@@ -218,7 +223,7 @@ li a: hover {
   .top {
     text-align:center;
   }
-  
+
   .bottom {
 
     text-align:center !important;
