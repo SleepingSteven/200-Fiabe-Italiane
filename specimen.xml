@@ -1,8 +1,9 @@
-<raccolta xmlns:dc="http://purl.org/dc/elements/1.1/">
-  <oggetto>
-    <fiaba>
-      <dc:title>Il Dimezzato</dc:title>
+<?xml version="1.0" encoding="UTF-8"?>
+<raccolta xmlns:dc="http://purl.org/dc/elements/1.1/" xml:id="200 Fiabe Italiane">
+  <indice>
+    <fiaba n="34">
       <dc:subject>Fiaba</dc:subject>
+      <dc:title>Il Dimezzato</dc:title>
       <dc:description>
       Fiaba n.34 della raccolta di "Fiabe Italiane, raccolte dalla tradizione popolare durante gli utlimi cento anni e trascritte in lingua dai vari dialetti da Italo Clavino", narrante la storia di un giovane tagliato a metà che, potendo realizzare ogni suo desiderio per la virtù trasmessagli da un pesce, rende madre la principessa che rideva di lui. Tratta dalla fiaba originale "El Mezo", inserita nella raccolta "Fiabe popolari veneziane" di Domenico Giuseppe Bernoni a Venezia nel 1893.
       </dc:description>
@@ -13,9 +14,10 @@
       <dc:date>2020</dc:date>
       <dc:language>it</dc:language>
       <dc:format>html - 34255 byte</dc:format>
-      <dc:source>Fiabe Italiane, Milano - Giulio Einaudi Editore, 1956</dc:source>
+      <dc:source>Fiabe Italiane / Italo Calvino, Milano - Giulio Einaudi Editore, 1956</dc:source>
       <dc:relation>34 - Il dimezzato, illustrazione [Relationship described is IsPartOf]</dc:relation>
-      <dc:relation>Fiabe popolari veneziane - 9, Venezia - 1893 [Relationship described is IsBasedOn]</dc:relation>
+      <dc:source>Fiabe popolari veneziane - 9 / Domenico Giuseppe Bernoni, Venezia - 1893</dc:source>
+      <dc:relation>Fiabe popolari veneziane - 9 / Domenico Giuseppe Bernoni, Venezia - 1893 [Relationship described is IsBasedOn]</dc:relation>
       <dc:relation>BERN - III [Relationship described is References]</dc:relation>
       <dc:coverage>Venezia, Veneto, Italia</dc:coverage>
       <dc:publisher>Alma Mater Studiorum - Università di Bologna</dc:publisher>
@@ -29,5 +31,5 @@
         </URL>
       </dc:rights>
     </fiaba>
-  </oggetto>
+  </indice>
 </raccolta>
